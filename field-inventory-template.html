@@ -44,16 +44,27 @@
                         <th>Sensitivity and minimization decision</th>
                     </tr>
                 </thead>
+                
                 <tbody>
                     <tr>
-                        <td>Example only</td>
-                        <td>Replace</td>
-                        <td>Yes/No</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace or N/A</td>
-                        <td>Replace or none</td>
-                        <td>Replace</td>
+                        <td>Contact email</td>
+                        <td>The only channel to send confirmation and reply to the request. </td>
+                        <td>Yes</td>
+                        <td>input <code>type="email"</code></td>
+                        <td><code>email</code> Example: <code>user@example.com</code></td>
+                        <td><code>autocomplete="email"</code>; <code>inputmode="email"</code></td>
+                        <td>Required format checked by <code>type="email"</code></td>
+                        <td>Personal contact data. No name, phone number, or address collected to keep collection minimal.</td>
+                    </tr>
+                    <tr>
+                        <td>Reference number</td>
+                        <td>Allows for existing ticket tracking, optional so new requests can be submitted without it.</td>
+                        <td>No</td>
+                        <td>input <code>type="text"</code></td>
+                        <td><code>reference</code> Example <code>NW-123456</code></td>
+                        <td><code>autocomplete="off"</code></td>
+                        <td>Free text, no rigid pattern, Example NW-123456</td>
+                        <td>Low sensitivity and not personal, Optional to avoid over collection.</td>
                     </tr>
                 </tbody>
             </table>
