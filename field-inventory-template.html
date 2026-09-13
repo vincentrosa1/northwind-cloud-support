@@ -140,6 +140,29 @@
                         <td>Required, single choice.</td>
                         <td>None, time preference not a precise schedule </td>
                     </tr>
+
+                    <tr>
+                        <td>Affected Users</td>
+                        <td>Gauges the impact and priority level of the issues.</td>
+                        <td>No</td>
+                        <td><code>input type="number"</code></td>
+                        <td><code>affected_count</code> | integer <code>1 - 50</code></td>
+                        <td><code>inputmode="numeric"</code></td>
+                        <td>Optional, <code>min="1" max="50" step="1"</code></td>
+                        <td>None, impact assessment only.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Issue description</td>
+                        <td>Chief complaint or issue that the support team needs to address.</td>
+                        <td>Yes</td>
+                        <td><code>textarea</code></td>
+                        <td><code>description</code> | free text</td>
+                        <td>N/A</td>
+                        <td>Required, <code>maxlength="600"</code></td>
+                        <td>Could invite oversharing: instructions will warn against 
+                            passwords/private information and lenght is capped.</td>
+                    </tr>
                 </tbody>
             </table>
         </body>
