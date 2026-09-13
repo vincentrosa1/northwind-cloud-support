@@ -74,6 +74,72 @@
                         <td>Free text, no rigid pattern, Example NW-123456</td>
                         <td>Low sensitivity and not personal, Optional to avoid over collection.</td>
                     </tr>
+
+                    <tr>
+                        <td>Product area</td>
+                        <td>Routes the request to the correct team.</td>
+                        <td>Yes</td>
+                        <td><code>select</code></td>
+                        <td><code>product</code> | <code>app | website | api | billing | desktop </code></td>
+                        <td>N/A</td>
+                        <td>Required, placeholder option is <code>disabled</code> so a real choice must be made. </td>
+                        <td>None, no personal categorization.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Request category</td>
+                        <td>Sets the response expectations and trioge path.</td>
+                        <td>Yes</td>
+                        <td><code>select</code></td>
+                        <td><code>category</code> | <code>bug | access | billing | feature | other</code></td>
+                        <td>N/A</td>
+                        <td>Required, single choice.</td>
+                        <td>None, no personal information collected.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Priority</td>
+                        <td>Helps schedule urgent issues appropriately.</td>
+                        <td>Yes</td>
+                        <td>radio group</td>
+                        <td><code>priority</code> | <code>low | normal | high | urgent</code></td>
+                        <td>N/A</td>
+                        <td>Required, single choice.</td>
+                        <td>None, no personal information collected.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Preferred contact method</td>
+                        <td>Respects how the requester wants to be contacted.</td>
+                        <td>Yes</td>
+                        <td>radio group</td>
+                        <td><code>contact_pref</code> | <code>email | phone | chat</code></td>
+                        <td>N/A</td>
+                        <td>Required, single choice.</td>
+                        <td>Low, a preference but no contact data collected.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Preferred Appointment Date</td>
+                        <td>Schedules the support appointment.</td>
+                        <td>Yes</td>
+                        <td><code>input type="date"</code></td>
+                        <td><code>preferred_date</code> | <code>YYYY-MM-DD</code></td>
+                        <td>N/A</td>
+                        <td>Required: <code>min</code> set to a near future date. No past dates.</td>
+                        <td>None, scheduling information only.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Preferred Time</td>
+                        <td>Narrows scheduling without collecting exact availability</td>
+                        <td>Yes</td>
+                        <td><code>select</code></td>
+                        <td><code>time_window</code> | <code>morning | afternoon |evening</code></td>
+                        <td>N/A</td>
+                        <td>Required, single choice.</td>
+                        <td>None, time preference not a precise schedule </td>
+                    </tr>
                 </tbody>
             </table>
         </body>
