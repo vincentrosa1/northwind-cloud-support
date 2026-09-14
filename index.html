@@ -27,8 +27,10 @@
                     <legend>F3 · Requester Contact</legend>
                     <div class="field">
                         <label for="email">Contact email <span aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
+                        <p class="help" id="email-help">Format: name@example.com</p>
                         <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
                     </div>
+                    
                     <div class="field">
                         <label for="reference">Reference number</label>
                         <input id="reference" name="reference" type="text" autocomplete="off">
@@ -48,6 +50,7 @@
                             <option value="desktop">Desktop app</option>
                         </select>
                     </div>
+
                     <div class="field">
                         <label for="category">Request category <span aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
                         <select id="category" name="category" required>
