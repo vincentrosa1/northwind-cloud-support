@@ -59,7 +59,22 @@
                             <option value="other">Other</option>
                         </select> 
                     </div>
-                </fieldset>
+                
+                    <fieldset class="subgroup">
+                        <legend>Priority <span aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></legend>
+                        <label class="choice"><input type="radio" name="priority" value="low" required> Low</label>
+                        <label class="choice"><input type="radio" name="priority" value="normal"> Normal</label>
+                        <label class="choice"><input type="radio" name="priority" value="high"> High</label>
+                        <label class="choice"><input type="radio" name="priority" value="urgent"> Urgent</label>
+                    </fieldset>    
+
+                    <fieldset class="subgroup">
+                        <legend>Preferred contact method <span aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></legend>
+                        <label class="choice"><input type="radio" name="contact_pref" value="email" required> Email</label>
+                        <label class="choice"><input type="radio" name="contact_pref" value="phone"> Phone</label>
+                        <label class="choice"><input type="radio" name="contact_pref" value="chat"> Chat</label>
+                    </fieldset>
+                </fieldset>    
             </form>
                 <section id="states">
                     <h2>F5 · State and Recovery Specimen</h2>
