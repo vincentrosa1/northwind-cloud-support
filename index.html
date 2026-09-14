@@ -28,12 +28,13 @@
                     <div class="field">
                         <label for="email">Contact email <span aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
                         <p class="help" id="email-help">Format: name@example.com</p>
-                        <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+                        <input id="email" name="email" type="email" autocomplete="email" inputmode="email" aria-describedby="email-help">
                     </div>
                     
                     <div class="field">
                         <label for="reference">Reference number</label>
-                        <input id="reference" name="reference" type="text" autocomplete="off">
+                        <p class="help" id="reference-help">Optional | Example: NW-123456</p>
+                        <input id="reference" name="reference" type="text" autocomplete="off" aria-describedby="reference-help">
                     </div>
                 </fieldset>
 
