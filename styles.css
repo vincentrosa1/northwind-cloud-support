@@ -333,3 +333,39 @@ textarea:user-invalid {
 .error-summary h3 {
     color: var(--color-action);
 }
+
+
+/* ===STATE Specimens === */
+.specimen-list {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    gap: var(--space-md);
+    max-width: var(--measure);
+}
+
+.specimen {
+    display: grid;
+    gap: var(--space-2xs);
+}
+
+.specimen-label {
+    font-weight: var(--weight-bold);
+    font-size: var(--step--1);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-muted);
+}
+
+
+.is-focus-demo {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+}
+.is-valid-demo {
+    border-color: var(--color-accent) !important;
+}
+.is-invalid-demo {
+    border-color: var(--color-action) !important;
+    background: #fff1f0 !important;
+}
