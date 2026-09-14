@@ -134,3 +134,46 @@ textarea {
     min-height: 8rem;
     resize: vertical;
 }
+
+/* === CHOICES & FIELDSETS === */
+fieldset {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+legend {
+    font-weight: var(--weight-bold);
+    padding: var(--space-2xs);
+}
+
+.subgroup {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: var(--space-md);
+}
+
+.subgroup legend {
+    padding-inline: 0;
+    margin-bottom: var(--space-2xs);
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xs);
+    margin-bottom: var(--space-2xs);
+    max-width: var(--measure);
+}
+
+.choice label {
+    font-weight: var(--weight-regular);
+    margin: 0;
+}
+
+.choice input {
+    width: auto;
+    flex: none;
+}
