@@ -20,8 +20,20 @@
                 <p><strong>Required fields</strong> are marked with an asterisk (<span aria-hidden="true">*</span>) and the word "required." All other fields are optional.</p>
                 <p><strong>Privacy notice:</strong> This is a front-end prototype. It does not collect or store real data, and nothing is sent to a server. Enter fictional information only.</p>
             </section>
-            <form action="" method="get">
+            <form action="" method="get" novalidate>
                 <p class="help">Fields marked <span aria-hidden="true">*</span> are required.</p>
+
+                <fieldset>
+                    <legend>f3 · Requester Contact</legend>
+                    <div class="field">
+                        <label for="email">Contact email <span aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
+                        <input id="email" name="email" type="email" autcomplete="email" inputmode="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="reference">Reference number</label>
+                        <input id="reference" name="reference" type="text" autocomplete="off">
+                    </div>
+                </fieldset>
             </form>
                 <section id="states">
                     <h2>F5 · State and Recovery Specimen</h2>
