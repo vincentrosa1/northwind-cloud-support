@@ -279,3 +279,57 @@ button[disabled],
     padding: var(--space-sm) var(--space-md);
     box-shadow: var(--elevation-1);
 }
+
+/* === STATE STYLING === */
+
+/* Valid */
+input:user-valid,
+select:user-valid,
+textarea:user-valid {
+    border-color: var(--color-accent);
+}
+
+/* Invalid */
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+    border-color: var(--color-action);
+    background: #fff1f0;
+}
+
+/* Server-returned error block */
+.field-error input,
+.field-error select,
+.field-error textarea {
+    border-color: var(--color-action);
+    background: #fff1f0;
+}
+
+.error-text {
+    color: var(--color-action);
+    font-weight: var(--weight-bold);
+    margin: 0;
+}
+
+.error-tag {
+    display: inline-block;
+    margin-left: var(--space-2xs);
+    padding: 0 var(--space-2xs);
+    font-size: var(--step--1);
+    font-weight: var(--weight-bold);
+    color: var(--color-on-action);
+    background: var(--color-action);
+    border-radius: var(--radius-sm);
+}
+
+.error-summary {
+    border-left: 4px solid var(--color-action);
+    background: #fff1f0;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-lg);
+}
+
+.error-summary h3 {
+    color: var(--color-action);
+}
