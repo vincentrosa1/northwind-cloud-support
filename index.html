@@ -34,6 +34,32 @@
                         <input id="reference" name="reference" type="text" autocomplete="off">
                     </div>
                 </fieldset>
+
+                <fieldset>
+                    <legend>F3 · Request details</legend>
+                    <div class="field">
+                        <label for="product">Product area <span aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
+                        <select id="product" name="product" required>
+                            <option value="" disabled selected> Select a product area</option>
+                            <option value="app">App</option>
+                            <option value="website">Website</option>
+                            <option value="api">API</option>
+                            <option value="billing">Billing</option>
+                            <option value="desktop">Desktop app</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="category">Request category <span aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
+                        <select id="category" name="category" required>
+                            <option value="" disabled selected> Select a request category</option>
+                            <option value="bug">Bug</option>
+                            <option value="access">Account Access</option>
+                            <option value="billing">Billing</option>
+                            <option value="feature">Feature question</option>
+                            <option value="other">Other</option>
+                        </select> 
+                    </div>
+                </fieldset>
             </form>
                 <section id="states">
                     <h2>F5 · State and Recovery Specimen</h2>
