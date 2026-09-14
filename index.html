@@ -160,15 +160,22 @@
                         </li>
                     </ul>
 
-                    <div class="error-summary">
-                        <h3>There is a problem with the fictional submission</h3>
-                        <p><a href="#error-example">Email address needs attention</a></p>
+                    <div class="error-summary" role="group" aria-labelledby="error-summary-heading">
+                        <h3 id="error-summary-heading">There is a problem with the fictional submission</h3>
+                        <p>The following field needs attention before the fictional request can be sent:</p>
+                        <ul>
+                            <li><a href="#error-example">Contact email: enter an address in the format name@example.com</a></li>
+                        </ul>
                     </div>
+                    
+                    
                     <div class="field field-error">
-                        <label for="error-example">Email address</label>
-                        <input id="error-example" type="email" value="alex.example" aria-invalid="true" aria-describedby="error-message">
-                        <p id="error-message"><strong>Error:</strong> Enter an address in the format name@example.com.</p>
+                        <label for="error-example">Contact email <span class="error-tag">Error</span></label>
+                        <p class="error-text" id="error-message">Enter an address in the format name@example.com</p>
+                        <input id="error-example" type="email" value="vince.example" aria-invalid="true" aria-describedby="error-message" disabled>
                     </div>
+                    
+                    <p class="specimen-label">Disabled</p>
                     <button type="button" disabled>Disabled example</button>
                 </section>
                 <section id="documentation">
