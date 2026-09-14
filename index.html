@@ -124,6 +124,42 @@
                     <p>These are static, non-interactive specimens shown for documentation only. They are not part of the request form above. They will illustrate each control state:
                         default, focus, required, valid, invalid, disabled, and a server-returned error.
                     </p>
+
+                    <ul class="specimen-list">
+                        <li class="specimen">
+                            <span class="specimen-label">Default</span>
+                            <input type="text" value="Sample text" disabled>
+                        </li>
+
+                        <li class="specimen">
+                            <span class="specimen-label">Focus</span>
+                            <input type="text" value="Sample text" class="is-focus-demo" disabled>
+                            <span class="help"> Focus shows a visible outline.</span>
+                        </li>
+
+                        <li class="specimen">
+                            <span class="specimen-label">Required</span>
+                            <input type="text" value="" placeholder="Required field" aria-label="Required state example" disabled>
+                            <span class="help">Marked required with <span aria-hidden="true">*</span> and the word "required". </span>
+                        </li>
+
+                        <li class="specimen">
+                            <span class="specimen-label">Valid</span>
+                            <input type="email" value="user@example.com" class="is-valid-demo" aria-label="Valid state example" disabled>
+                        </li>
+
+                        <li class="specimen">
+                            <span class="specimen-label">Invalid</span>
+                            <input type="email" value="vince.example" class="is-invalid-demo" aria-label="Invalid state example" disabled>
+                            <span class="help">Invalid entries show a red border plus a message, color is never the only indicator.</span>
+                        </li>
+
+                        <li class="specimen">
+                            <span class="specimen-label">Disabled</span>
+                            <input type="text" value="Unavailable" disabled>
+                        </li>
+                    </ul>
+
                     <div class="error-summary">
                         <h3>There is a problem with the fictional submission</h3>
                         <p><a href="#error-example">Email address needs attention</a></p>
