@@ -208,7 +208,7 @@ button:active,
 }
 
 .button-secondary {
-    background: transaparent;
+    background: transparent;
     color: var(--color-action);
 }
 
@@ -231,4 +231,51 @@ button[disabled],
 :focus-visible {
     outline: 3px solid var(--color-focus);
     outline-offset: 2px;
+}
+
+
+/* === SURFACES === */
+.page-header {
+    background: var(--color-on-action);
+    color: var(--color-on-action);
+    padding: var(--space-xl) var(--space-md);
+}
+
+.page-header .eybrow {
+    color: var(--color-accent);
+    font-weight: var(--weight-bold);
+    margin-bottom: var(--space-2xs);
+}
+
+.page-header h1 {
+    margin-bottom: var(--space-2xs);
+}
+
+.page-header .lede {
+    margin-bottom: 0;
+    color: var(--color-on-action);
+}
+
+.card {
+    background: var(--color-surface);
+    color: var(--color-text);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    box-shadow: var(--elevation-1);
+}
+
+.card-outline {
+    background: var(--color-surface);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+}
+
+.callout {
+    background: var(--color-surface);
+    border-left: 4px solid var(--color-accent);
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm) var(--space-md);
+    box-shadow: var(--elevation-1);
 }
