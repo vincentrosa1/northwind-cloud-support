@@ -1,118 +1,65 @@
-:root{
-    --color-text:#404040;
-    --color-surface:#fff;
-    --color-action:#8c1d40;
-    --color-accent:#ffc627;
-    --color-border:#747474;
-    --color-error:#b3261e;
-    --color-muted:#5c6670;
-    --space-3:1rem;
-    --radius:.5rem;
-    --measure:68ch;
-}
-*,*::before,*::after{
-    box-sizing:border-box;
-}
-body{
-    margin:0;
-    color:var(--color-text);
-    background:var(--color-surface);
-    font-family:Arial,sans-serif;
-    line-height:1.6;
-}
-.page-header{
-    padding:clamp(2rem,6vw,5rem);
-    background:var(--color-action);
-    color:#fff;
-}
-.eyebrow{
-    color:var(--color-accent);
-    font-weight:700;
-}
-.lede{
-    max-width:var(--measure);
-    font-size:1.25rem;
-}
-main{
-    max-width:52rem;
-    margin:auto;
-    padding:var(--space-3);
-}
-section,form{
-    margin-block:2rem;
-}
-form,fieldset,.field{
-    display:grid;
-    gap:.65rem;
-}
-form{
-    gap:1.5rem;
-}
-fieldset{
-    padding:1rem;
-    border:1px solid #d0d0d0;
-    border-radius:var(--radius);
-}
-legend,label{
-    font-weight:700;
-}
-.help{
-    margin:0;
-    color:var(--color-muted);
-}
-input,select,textarea,button{
-    font:inherit;
-}
-input:not([type="radio"]):not([type="checkbox"]),select,textarea{
-    width:100%;
-    padding:.75rem;
-    border:2px solid var(--color-border);
-    border-radius:.25rem;
-}
-textarea{
-    min-height:8rem;
-    resize:vertical;
-}
-.choice{
-    display:flex;
-    gap:.65rem;
-    align-items:flex-start;
-    padding:.5rem 0;
-}
-.choice input{
-    inline-size:1.25rem;
-    block-size:1.25rem;
-}
-button{
-    justify-self:start;
-    min-height:44px;
-    padding:.75rem 1rem;
-    background:var(--color-action);
-    color:#fff;
-    border:2px solid var(--color-action);
-    border-radius:.25rem;
-    font-weight:700;
-}
-:focus-visible{
-    outline:.2rem solid var(--color-accent);
-    outline-offset:.2rem;
-}
-.error-summary,.field-error{
-    padding:1rem;
-    border-left:.4rem solid var(--color-error);
-    background:#fff1f0;
-}
-.field-error input{
-    border-color:var(--color-error);
-}
-button:disabled{
-    opacity:.55;
-    cursor:not-allowed;
-}
-@media (min-width:48rem){
-    .paired-fields{
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:1rem;
-    }
+/* === Merged from Module 1 design system, adapted for this form. === */
+
+/* === FONTS === */
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* === Reset === */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+img, picture, svg, video, canvas { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; }
+body { overflow-wrap: break-word; }
+
+/* === TOKENS === */
+:root {
+    --red-600: #c1272d;
+    --red-700: #fc767b;
+    --green-700: #2f5d3a;
+    --gold-500: #e0a92e;
+    --cream-50: #fbf6ec; /* background color */
+    --white: #ffffff;
+    --brown-900: #211b17;
+    --brown-400: #7a6d61;
+
+    --color-bg: var(--cream-50);
+    --color-surface: var(--white);
+    --color-text: var(--brown-900);
+    --color-muted: var(--brown-400);
+    --color-border: var(--brown-400);
+    --color-action: var(--red-600);
+    --color-action-strong: var(--red-700);
+    --color-on-action: var(--white);
+    --color-focus: var(--red-700);
+    --color-accent: var(--green-700);
+
+    --space-2xs: 0.5rem;
+    --space-xs: 0.75rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+
+    --measure: 65ch;
+    --container: 64rem;
+
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+
+    --elevation-1: 0 1px 2px rgba(33, 27, 23, 0.08);
+    --elevation-2: 0 4px 12px rgba(33, 27, 23, 0.12);
+
+    --font-body: "PT Serif", Georgia, "Times New Roman", serif;
+    --font-display: "PT Serif", Georgia, "Times New Roman", serif;
+
+    --text-base: 17px;
+    --leading: 1.6;
+    --leading-tight: 1.15;
+    --weight-regular: 400;
+    --weight-bold: 700;
+
+    --step--1: clamp(0.85rem, 0.82rem + 0.15vw, 0.94rem);
+    --step-0: var(--text-base);
+    --step-1: clamp(1.20rem, 1.13rem + 0.35vw, 1.40rem);
+    --step-2: clamp(1.50rem, 1.35rem + 0.70vw, 1.95rem);
+    --step-3: clamp(1.90rem, 1.55rem + 1.70vw, 2.75rem);
 }
