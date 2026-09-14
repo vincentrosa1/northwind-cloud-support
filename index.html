@@ -92,6 +92,22 @@
                         </select>
                     </div>
                 </fieldset>
+
+                <fieldset>
+                    <legend>F3 · Description &amp; preferences</legend>
+                    <div class="field">
+                        <label for="affected_count"> Affected users</label>
+                        <input id="affected_count" name="affected_count" type="number" min="1" max="50" step="1" inputmode="numeric">
+                    </div>
+                    <div class="field">
+                        <label for="description">Issue description <span aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
+                        <textarea id="description" name="description" rows="5" maxlength="600" required aria-describedby="description-help"></textarea>
+                    </div>
+                    <div class="choice">
+                        <input id="status_updates" name="status_updates" type="checkbox" value="yes">
+                        <label for="status_updates">Send status updates by email</label>
+                    </div>
+                </fieldset>
             </form>
                 <section id="states">
                     <h2>F5 · State and Recovery Specimen</h2>
