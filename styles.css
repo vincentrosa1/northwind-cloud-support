@@ -177,3 +177,58 @@ legend {
     width: auto;
     flex: none;
 }
+
+
+/* === BUTTONS & FOCUS === */
+button, 
+.button {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    font-weight: var(--weight-bold);
+    line-height: 1;
+    padding: var(--space-xs) var(--space-md);
+    border: 2px solid var(--color-action);
+    border-radius: var(--radius-md);
+    background: var(--color-action);
+    color: var(--color-on-action);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover, 
+.button:hover {
+    background: var(--color-text);
+    border-color: var(--color-on-action-strong);
+}
+
+button:active, 
+.button:active {
+    background: var(--color-action-strong);
+}
+
+.button-secondary {
+    background: transaparent;
+    color: var(--color-action);
+}
+
+.button-secondary:hover {
+    background: var(--color-action);
+    color: var(--color-on-action);
+}
+
+
+button:disabled, 
+button[disabled],
+.button:disabled,
+.button[disabled] {
+    background: var(--color-muted);
+    border-color: var(--color-muted);
+    color: var(--color-on-action);
+    cursor: not-allowed;
+}
+
+:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+}
