@@ -104,3 +104,33 @@ main {
     margin-inline: auto;
     padding: var(--space-lg) var(--space-md);
 }
+
+
+/* === FORM CONTROLS === */
+.field {
+    display: grid;
+    gap: var(--space-2xs);
+    margin-bottom: var(--space-md);
+    max-width: var(--measure);
+}
+
+label { font-weight: var(--weight-bold); }
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: var(--space-2xs) var(--space-xs);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-text);
+}
+
+textarea {
+    min-height: 8rem;
+    resize: vertical;
+}
