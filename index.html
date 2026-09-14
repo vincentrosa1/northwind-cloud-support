@@ -21,32 +21,8 @@
                 <p><strong>Privacy notice:</strong> This is a front-end prototype. It does not collect or store real data, and nothing is sent to a server. Enter fictional information only.</p>
             </section>
             <form action="" method="get">
-                <fieldset>
-                    <legend>F3 · Contact information</legend>
-                    <p class="help">Replace or extend this group based on your justified field inventory.</p>
-                    <div class="field">
-                        <label for="name">Name</label>
-                        <input id="name" name="name" type="text" autocomplete="name">
-                    </div>
-                    <div class="field">
-                        <label for="email">Email address (required)</label>
-                        <input id="email" name="email" type="email" autocomplete="email" required>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>F3 · Request choices</legend>
-                    <p class="help">Use an appropriate radio, checkbox, or select structure for the task.</p>
-                    <label class="choice">
-                        <input type="radio" name="request_type" value="option-a"> Replace with option A</label>
-                        <label class="choice"><input type="radio" name="request_type" value="option-b"> Replace with option B</label>
-                    </fieldset>
-                    <div class="field">
-                        <label for="details">Request details</label>
-                        <p class="help" id="details-help">Explain the expected content and any limit before entry.</p>
-                        <textarea id="details" name="details" aria-describedby="details-help"></textarea>
-                    </div>
-                    <button type="submit">Replace with a specific action</button>
-                </form>
+                <p class="help">Fields marked <span aria-hidden="true">*</span> are required.</p>
+            </form>
                 <section id="states">
                     <h2>F5 · State and Recovery Specimen</h2>
                     <p>Document default, focus, required, valid, invalid, disabled, and a static server-returned error. Keep this section separate from the primary blank form when necessary to avoid misleading users.</p>
