@@ -199,7 +199,7 @@ button,
 button:hover, 
 .button:hover {
     background: var(--color-text);
-    border-color: var(--color-on-action-strong);
+    border-color: var(--color-action-strong);
 }
 
 button:active, 
@@ -236,13 +236,13 @@ button[disabled],
 
 /* === SURFACES === */
 .page-header {
-    background: var(--color-on-action);
+    background: var(--color-action);
     color: var(--color-on-action);
     padding: var(--space-xl) var(--space-md);
 }
 
-.page-header .eybrow {
-    color: var(--color-accent);
+.page-header .eyebrow {
+    color: var(--gold-500);
     font-weight: var(--weight-bold);
     margin-bottom: var(--space-2xs);
 }
