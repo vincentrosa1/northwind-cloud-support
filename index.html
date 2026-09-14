@@ -85,11 +85,12 @@
                     <div class="field">
                         <label for="preferred_date">Preferred appointment date <span aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
                         <p class="help" id="preferred_date-help">On or after September 13, 2026.</p>
-                        <input id="preferred_date" name="preferred_date" type="date" required>
+                        <input id="preferred_date" name="preferred_date" type="date" min="2026-09-13" required aria-describedby="preferred_date-help">
                     </div>
                     <div class="field">
                         <label for="time_window">Preferred time <span aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
-                        <select id="time_window" name="time_window" required>
+                        <p class="help" id="time_window-help">Please select a time window that works for you.</p>
+                        <select id="time_window" name="time_window" required aria-describedby="time_window-help">
                             <option value="" disabled selected> Select a time window</option>
                             <option value="morning">Morning (8am - 12pm)</option>
                             <option value="afternoon">Afternoon (12pm - 4pm)</option>
@@ -103,7 +104,7 @@
                     <div class="field">
                         <label for="affected_count"> Affected users</label>
                         <p class="help" id="affected_count-help">Optional | How many users are affected by this issue? Enter a number between 1 and 50.</p>
-                        <input id="affected_count" name="affected_count" type="number" min="1" max="50" step="1" inputmode="numeric">
+                        <input id="affected_count" name="affected_count" type="number" min="1" max="50" step="1" inputmode="numeric" aria-describedby="affected_count-help">
                     </div>
                     <div class="field">
                         <label for="description">Issue description <span aria-hidden="true">*</span><span class="visually-hidden"> (required)</span></label>
