@@ -384,3 +384,28 @@ textarea:user-invalid {
     white-space: nowrap;
     border: 0;
 }
+
+
+/* === RESPONSIVE & ZOOM === */
+
+/* Small screens (below 320px): reduce heavy padding so content isn't cramped */
+@media (max-width: 30rem) {
+    main,
+    .page {
+        padding: var(--space-md) var(--space-sm);
+    }
+    .page-header {
+        padding: var(--space-lg) var(--space-sm);
+    }
+    fieldset {
+        padding: var(--space-sm);
+    }
+}
+
+
+/* Never let a control force horizontal scroll */
+input,
+select,
+textarea {
+    max-width: 100%;
+}
